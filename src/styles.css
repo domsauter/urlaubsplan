@@ -51,3 +51,54 @@ ul li {
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
+
+/* Beispielstil für den Kalender */
+.react-calendar {
+  background-color: #0056b3 !important; /* Hintergrundfarbe des Kalenders */
+}
+
+.react-calendar__tile--active {
+  background-color: #007bff !important; /* Hintergrundfarbe für aktive Tage */
+  color: #ffffff !important; /* Textfarbe für aktive Tage */
+}
+
+.react-calendar__tile--now {
+  background-color: #f0f0f0 !important; /* Hintergrundfarbe für den aktuellen Tag */
+}
+
+/* src/App.css oder Ihre spezifische CSS-Datei */
+
+.employee-calendar {
+  display: flex;
+  gap: 20px; /* Abstand zwischen den Mitarbeiterkalendern */
+}
+
+.employee-calendar-item {
+  flex: 1; /* Jeder Mitarbeiterkalender nimmt gleich viel Platz ein */
+}
+
+.employee-monthly-calendars {
+  display: flex;
+  flex-wrap: wrap; /* Umbruch der Monatskalender in neue Zeilen, wenn nötig */
+  gap: 10px; /* Abstand zwischen den Monatskalendern */
+}
+
+.employee-monthly-calendar {
+  flex: 1; /* Jeder Monatskalender nimmt gleich viel Platz ein */
+  border: 1px solid #ccc; /* Beispiel: Rahmen um jeden Monatskalender */
+  padding: 10px;
+}
+
+.employee-monthly-calendar h4 {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.vacation-marker {
+  background-color: #007bff; /* Beispiel: Farbe für Urlaubsmarkierung */
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin-right: 2px;
+  display: inline-block;
+}

@@ -1,8 +1,9 @@
 // src/App.js
 import React, { useState } from 'react';
-import EmployeeCalendar from './components/Calendar';
 import VacationForm from './components/VacationForm';
 import VacationList from './components/VacationList';
+import EmployeeCalendar from './components/EmployeeCalendar';
+import vacationsData from './data/vacationsData';
 import './styles.css';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <h1>Urlaubsverwaltung</h1>
-      <EmployeeCalendar />
+      <EmployeeCalendar vacations={vacationsData} />
       <VacationForm onAddVacation={addVacation} />
       <VacationList vacations={vacations} />
     </div>
